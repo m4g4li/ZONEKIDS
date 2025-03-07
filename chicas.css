@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #F2B6BB;
+    color: #CAC4D9;
+    color: #ADD9D9;
+    color: #A284BF;
+    color: #F2A74B;
+    color: #3D3B3B;
+    color: #F8F0FF;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.contenedor {
+    margin: auto;
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;/*Los elementos se ponen al lado menu main y aside*/
+    flex-wrap: wrap;/*Los elementos que no caben se pongan abajo*/
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(img/fondositio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #3D3B3B;
+}
+
+.header {
+    background-color: #CAC4D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    border-bottom: var(--border);
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+   
+}
+
+.logo {
+    margin-bottom: 10px; /* Espaciado entre el logo y el menú */
+}
+
+.logo img {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header .navbar a {
+    margin: 0 15px;
+    font-size: 20px;
+    color: #F5F6EF;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .icons div {
+    color: #F5F6EF;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+}
+
+.presentacion {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    margin-top: 20px;
+}
+  
+.caja {
+    flex: 1; /* Hace que ambas cajas ocupen el mismo ancho */
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+.boy {
+    margin-top: 300px;
+    text-align: left;
+    position: relative;
+}
+
+.boy .caja .uno img {
+    width: auto;
+}
+
+.boy h1 {
+    font-size: 53px;
+    color: white;
+    position: absolute;
+    font-family: "Pacifico", cursive;
+    top: 23%;
+    left: 25%;
+}
+
+.boy h2 {
+    font-size: 43px;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.boy p {
+    font-size: 20px;
+    color: #F5F6EF;
+    line-height: 1.8;
+    width: 400px;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    margin-top: 60px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background: #F2A74B;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+
+
+.contact-container {
+    padding: 20px;
+    width: 1000px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #CAC4D9;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+.contact-info {
+    width: 50%;
+}
+.contact-form {
+    width: 55%;
+}
+h2 {
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    border: none;
+   
+}
+.name-group {
+    display: flex;
+    gap: 10px;
+}
+.name-group input {
+    width: 100%;
+}
+button {
+    margin-top: 10px;
+    background-color: #F2A74B;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #A284BF;
+}
+
+/* Contenedor del mapa del sitio */
+.mapa-sitio {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+    background-image: url(img/bg2.png);
+    position: relative;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+/* Título */
+.mapa-sitio h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Contenedor de columnas */
+.contenedor-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Columnas */
+.columna {
+    width: 22%;
+    text-align: left;
+}
+
+/* Títulos de columnas */
+.columna h3 {
+    font-size: 18px;
+    color: #704c72;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Lista de enlaces */
+.columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna ul li {
+    font-size: 16px;
+    color: #4e3a57;
+    margin-bottom: 5px;
+}
+
+/* Fondo con pinceladas */
+.mapa-sitio::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('pincelada.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+footer p{
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+
+
+footer .redes-sociales{
+    padding: 20px 0;
+}
+
+
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 10px 0;
+    border-radius: 3px;
+    margin: 0 20px;
+}
+
+
+ 
+
+
+
+
+
+/* Para cuando el tamaño de pantalla sea menor a 600px */
+@media (max-width: 720px) {
+
+    #menu-btn {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #F5F6EF;
+	    margin: 0 20px; /* 0 arriba y abajo, 20px a los lados */
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 7%;
+        border-bottom: var(--border);
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 1000;
+          
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #C4A2F2;
+        width: 200px;
+        text-align: left;
+        transition: 0.3s ease-in-out;
+        border-radius: 5px;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column; /* Asegura que los enlaces estén en vertical */
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        display: block;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .header .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px; /* Ajusta el tamaño según sea necesario */
+    }
+
+    .caja {
+        flex-basis: 100%; /* Cada caja ocupará el 100% del ancho, moviéndose una debajo de la otra */
+    }
+
+    .hero h1 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .caja img{
+        width: 380px;
+    }
+
+    .boy{
+        margin-top: 150px;
+        text-align: center;
+        position: relative;
+    }
+
+    .boy h1 {
+        font-size: 23px;
+        color: white;
+        position: absolute;
+        top: 28%;
+        left: 30%;
+        text-align: left;
+    }
+
+    .boy h2 {
+        font-size: 23px;
+        color: white;
+        position: absolute;
+        top: 42%;
+        left: 40%;
+    }
+    
+    .boy p {
+        font-size: 15px;
+        color: #F5F6EF;
+        line-height: 1.8;
+        width: 300px;
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        margin-top: 35px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Solo una columna */
+    }
+
+
+
+
+    /* Títulos de columnas */
+    .columna h3 {
+        font-size: 8px;
+    }
+
+    /* Lista de enlaces */
+    .columna ul li {
+        font-size: 8px;
+        padding-right: 10px;
+    }
+
+}
+
