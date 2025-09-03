@@ -223,6 +223,10 @@ button:hover {
     margin: auto;
 }
 
+.accordion h1 , p {
+    color: #3D3B3B;
+}
+
 .accordion-header {
     background: #F2A74B;
     color: #f9f9f9;
