@@ -330,7 +330,7 @@ footer .redes-sociales a{
         font-size: 2rem;
         cursor: pointer;
         color: #F5F6EF;
-	margin: 0 20px; /* 0 arriba y abajo, 20px a los lados */
+	    margin: 0 20px; /* 0 arriba y abajo, 20px a los lados */
     }
 
 
@@ -423,7 +423,6 @@ footer .redes-sociales a{
     .dos p{
         margin-top: 0%;
         font-size: 18px;
-        color: #F5F6EF;
         line-height: 1.8;
         width: 300px;
         margin-left: 60px;
