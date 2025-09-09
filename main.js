@@ -1,5 +1,8 @@
 let navbar = document.querySelector('.navbar');
+let menuBtn = document.querySelector('#menu-btn');
 
-document.querySelector('#menu-btn').onclick = () =>{
+menuBtn.onclick = () => {
     navbar.classList.toggle('active');
+    menuBtn.classList.toggle('fa-bars'); // quita/añade las 3 rayas
+    menuBtn.classList.toggle('fa-times'); // pone/quita la X
 }
