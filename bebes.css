@@ -171,12 +171,22 @@ body {
     max-width: 100%;
     border-radius: 10px;
 }
+
+.item h3 {
+    color: #3D3B3B;
+}
+
+.item p {
+    color: #3D3B3B;
+}
+
 .btn {
     display: block;
     margin: 10px auto;
     padding: 10px;
     background: #F2A74B;
-    color: white;
+    color: #3D3B3B;
+    font-weight: 600;
     text-decoration: none;
     border-radius: 20px;
 }
